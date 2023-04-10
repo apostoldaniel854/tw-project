@@ -1,2 +1,2 @@
 # tw-project
-Competitive programming blogsite
+Website with blogs about competitive programming. 
