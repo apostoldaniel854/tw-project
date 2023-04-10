@@ -1,6 +1,7 @@
 /* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 
 /* VARIABLES */
 
@@ -18,7 +19,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.54;
   text-align: center;
   background-color: var(--hover-color);
