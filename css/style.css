@@ -26,6 +26,26 @@ body {
   background-size: cover;
 }
 
+em::before {
+  animation: descriptanimation infinite 10s;
+  content: "a competitive programmer and software engineer";
+  color: #ffc107;
+}
+
+@keyframes descriptanimation {
+  0% {
+    content: "a competitive programmer and software engineer";
+    color: #ffc107
+  }
+  50% {
+    content: " a curious learner and a tech enthusiast";
+    color:rgb(230, 14, 14)
+  }
+  75% {
+    content: "a CS student at University of Bucharest";
+    color: #2196f3;
+  }
+}
 img {
   width: 100%;
   height: auto;
@@ -40,6 +60,10 @@ img {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .btn {
   text-decoration: none;
   font-size: 1.3rem;
@@ -108,6 +132,8 @@ img {
   align-items: center;
 }
 
+
+
 #title {
   color: #fff;
   font-size: 3.5rem;
@@ -162,11 +188,14 @@ img {
   margin-bottom: 3rem;
 }
 
+
 #blogs .blogs .box {
   background-color: #444;
   border: 5px solid #eee;
   border-radius: 3px;
+
 }
+
 
 #blogs .blogs .box a {
   display: inline-block;
@@ -181,6 +210,11 @@ img {
   text-align: center;
   color: #fff;
 }
+
+#blogs .blogs .box a:hover {
+  font-style: bold;
+}
+
 .language-.cpp {
   background-color: #3c292f;
   color: #fff;
@@ -190,7 +224,7 @@ img {
   text-align: left;
   width: 100%;
   padding: 7rem .1rem;
-  background-color: whitesmoke;
+  background-color: rgb(196, 196, 196);
 }
 .blogpost {
   margin: 2rem;
@@ -320,6 +354,8 @@ img {
   #navbar {
     padding: 0rem 1rem;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   #blogs .blogs {
