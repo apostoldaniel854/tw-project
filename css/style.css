@@ -21,7 +21,7 @@ body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.54;
   text-align: center;
-  background-color: #3a0404;
+  background-color: var(--hover-color);
 
   background-image: url(../images/coding.gif);
   background-size: cover;
