@@ -121,7 +121,7 @@ a {
 }
 
 #navbar ul a:hover {
-  background-color: rgb(253, 6, 47);
+  background-color: rgb(6, 101, 253);
 }
 
 #about .container {
@@ -167,6 +167,7 @@ a {
   grid-row-gap: 3rem;
   grid-column-gap: 2rem;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 #blogs .container>h1 {
@@ -211,10 +212,6 @@ a {
   color: #fff;
 }
 
-#blogs .blogs .box a:hover {
-  font-style: bold;
-}
-
 .language-.cpp {
   background-color: #3c292f;
   color: #fff;
@@ -231,6 +228,27 @@ a {
   padding: 2rem;
   border-color:rgb(230, 14, 14);
   border-radius: 10px;
+}
+.blogpost p {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: .6rem;
+  line-height: 1.2;
+}
+.blogpost h2 {
+  font-size: 2.6rem;
+  color: #333;
+  font-weight: bolder;
+  text-transform: capitalize;
+  padding-bottom: 1.6rem;
+  line-height: 1.2;
+}
+.blogpost h3 {
+  color: #333;
+  font-weight: bolder;
+  margin-bottom: .6rem;
+  line-height: 1.2;
 }
 
 #blog h2 {
@@ -296,8 +314,8 @@ a {
   height: 100%;
 }
 
-#contact .container p {
-  font-size: 1rem;
+#contact .container h2 {
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 3rem;
 }
