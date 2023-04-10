@@ -12,7 +12,6 @@
   --hover-color: rgb(58, 131, 248);
 }
 
-/* CSS RESET */
 * {
   margin: 0;
   padding: 0;
@@ -24,38 +23,12 @@ body {
   line-height: 1.54;
   text-align: center;
   background-color: var(--hover-color);
-
   background-image: url(../images/coding.gif);
   background-size: cover;
 }
 
-em::before {
-  animation: descriptanimation infinite 10s;
-  content: "a competitive programmer and software engineer";
-  color: #ffc107;
-}
+/* UTILS */
 
-@keyframes descriptanimation {
-  0% {
-    content: "a competitive programmer and software engineer";
-    color: #ffc107
-  }
-  50% {
-    content: " a curious learner and a tech enthusiast";
-    color:rgb(230, 14, 14)
-  }
-  75% {
-    content: "a CS student at University of Bucharest";
-    color: #2196f3;
-  }
-}
-img {
-  width: 100%;
-  height: auto;
-}
-
-
-/* UTILITY CLASSES */
 .container {
   max-width: 1200px;
   padding: 0 1.5rem;
@@ -85,7 +58,7 @@ a {
     background-color: var(--hover-color);
 }
 
-/* ABOUT SECTION */
+/* NAVIGATION AND ABOUT SECTIONS */
 
 #about {
   height: 100vh;
@@ -135,7 +108,6 @@ a {
 }
 
 
-
 #title {
   color: #fff;
   font-size: 3.5rem;
@@ -154,7 +126,28 @@ a {
   color: rgb(240, 248, 255);
 }
 
-/* BLOGS SECTION*/
+em::before {
+  animation: descriptanimation infinite 10s;
+  content: "a competitive programmer and software engineer";
+  color: #ffc107;
+}
+
+@keyframes descriptanimation {
+  0% {
+    content: "a competitive programmer and software engineer";
+    color: #ffc107
+  }
+  50% {
+    content: " a curious learner and a tech enthusiast";
+    color:rgb(230, 14, 14)
+  }
+  75% {
+    content: "a CS student at University of Bucharest";
+    color: #2196f3;
+  }
+}
+
+/* BLOGS SECTION */
 
 #blogs {
   text-align: center;
