@@ -7,6 +7,7 @@
 :root {
   --primary-color: #70ace6;
   --secondary-color:#44586e;
+  --hover-color: rgb(6, 101, 253);
 }
 
 /* CSS RESET */
@@ -20,7 +21,7 @@ body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.54;
   text-align: center;
-  background-color: #444;
+  background-color: #3a0404;
 
   background-image: url(../images/coding.gif);
   background-size: cover;
@@ -79,14 +80,13 @@ a {
 }
 
 .btn:hover {
-    background-color: rgb(6, 101, 253);
+    background-color: var(--hover-color);
 }
 
 /* ABOUT SECTION */
 
 #about {
   height: 100vh;
-  /* background-color: #444; */
 }
 
 #navbar {
@@ -121,7 +121,7 @@ a {
 }
 
 #navbar ul a:hover {
-  background-color: rgb(6, 101, 253);
+  background-color: var(--hover-color);
 }
 
 #about .container {
