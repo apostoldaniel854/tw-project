@@ -392,3 +392,63 @@ em::before {
     margin-top: 1rem;
   }
 }
+
+/* Add styles to the comment section */
+#write-comment {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.comment-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.comment-btn {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#submit-comment,
+#clear-comment {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#submit-comment {
+  background-color: var(--secondary-color);
+}
+
+#clear-comment {
+  background-color: var(--primary-color);
+}
+
+/* Add hover effect to buttons */
+#submit-comment:hover,
+#clear-comment:hover {
+  opacity: 0.8;
+}

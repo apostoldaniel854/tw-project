@@ -48,12 +48,12 @@ CSS:
 
 ### Cerințe generale minimale pentru partea 2 (JavaScript + misc):
 - [X] fișier separat pentru codul JavaScript
-- [ ] modificarea stilului unui element sau al unui grup de elemente (TODO)
-- [ ] manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS) (TODO)
+- [X] modificarea stilului unui element sau al unui grup de elemente (TODO)
+- [X] manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS)
 - [ ] crearea și stergerea de elemente HTML 
-- [ ] folosirea și modificarea evenimentelor generate de mouse si tastatură (TODO)
+- [X] folosirea și modificarea evenimentelor generate de mouse si tastatură
 - [ ] modificare de proprietăți (TODO)
-- [ ] inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
+- [X] inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
 - [ ] folosirea setTimeout sau setInterval
 - [ ] folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
 - [ ] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
