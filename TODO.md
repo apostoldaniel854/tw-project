@@ -58,7 +58,7 @@ CSS:
 - [X] folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
 - [X] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
 - [ ] schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziție)
-- [ ] folosirea proprietăților classList, target sau currentTarget
+- [X] folosirea proprietăților classList, target sau currentTarget
 - [ ] folosirea metodelor getComputedStyle și stopPropagation
 - [ ] validarea datelor dintr-un formular folosind expresii regulate (TODO)
 
