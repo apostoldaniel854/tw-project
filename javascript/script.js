@@ -131,8 +131,8 @@ window.onload = function() {
         inputs.forEach(textarea => textarea.value='');
     })
 
-    /// every 10 seconds a different image will be displayed
-    setInterval(changeImage, 10000);
+    /// every 5 seconds a different image will be displayed
+    setInterval(changeImage, 5000);
     function changeImage() {
         let images = ["images/1.png", "images/2.PNG", "images/3.PNG", "https://avatars.githubusercontent.com/u/47429017?s=400&u=97e70ab3b685add9cf2ef360c2b623945db24fd7&v=4"];
         let randomNum = Math.floor(Math.random() * images.length);
