@@ -313,6 +313,7 @@ em::before {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 3rem;
+  color: white;
 }
 
 #contact .container .social>div a {
@@ -602,9 +603,15 @@ textarea {
   font-weight: bold;
 }
 
-/// comment-date
-#comment-section p#comment-date {
-  margin-top: 5px;
-  font-size: 12px;
-  color: #999;
+// have logo image centered 
+#logo {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  padding: 10px;
+}
+#logo img {
+  margin: 10px auto;
+  text-alling: center;
 }

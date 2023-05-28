@@ -44,7 +44,7 @@ window.onload = function() {
         }
         /// validate name using regex
         if (!name.match(/^[a-zA-Z0-9_.-]*$/)) {
-            alert("please enter a valid username (only letters and numbers)");
+            alert("please enter a valid username: only letters, numbers, underscores, dots and dashes are allowed");
             return;
         }
         alert("Thank you for your comment");
@@ -130,4 +130,14 @@ window.onload = function() {
     btnClear.addEventListener('click', () => {
         inputs.forEach(textarea => textarea.value='');
     })
+
+    /// every 10 seconds a different image will be displayed
+    setInterval(changeImage, 10000);
+    function changeImage() {
+        let images = ["images/1.png", "images/2.png", "images/3.png", "https://avatars.githubusercontent.com/u/47429017?s=400&u=97e70ab3b685add9cf2ef360c2b623945db24fd7&v=4"];
+        let randomNum = Math.floor(Math.random() * images.length);
+        let logoImage = document.getElementById("logo-image");
+        logoImage.src = images[randomNum];
+    }
+    
 }

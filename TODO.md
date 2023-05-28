@@ -47,20 +47,20 @@ CSS:
 - [X] site-ul trebuie să conțină o animație care să modifice mai multe proprietăți ale aceluiași element  
 
 ### Cerințe generale minimale pentru partea 2 (JavaScript + misc):
-- [X] fișier separat pentru codul JavaScript
-- [X] modificarea stilului unui element sau al unui grup de elemente 
-- [X] manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS)
-- [X] crearea și stergerea de elemente HTML 
-- [X] folosirea și modificarea evenimentelor generate de mouse si tastatură
-- [X] modificare de proprietăți
-- [X] inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
-- [X] folosirea setTimeout sau setInterval
-- [X] folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
-- [X] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
-- [ ] schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziție)
-- [X] folosirea proprietăților classList, target sau currentTarget
-- [X] folosirea metodelor getComputedStyle și stopPropagation(done)
-- [X] validarea datelor dintr-un formular folosind expresii regulate
+- [X] fișier separat pentru codul JavaScript (sure)
+- [X] modificarea stilului unui element sau al unui grup de elemente  (?)
+- [X] manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS) (sure)
+- [X] crearea și stergerea de elemente HTML (sure)
+- [X] folosirea și modificarea evenimentelor generate de mouse si tastatură (sure)
+- [X] modificare de proprietăți (sure)
+- [X] inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea) (sure)
+- [X] folosirea setTimeout sau setInterval (sure)
+- [X] folosirea localStorage (să se pastreze în localStorage o colecție de elemente) (sure)
+- [X] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date (sure)
+- [X] schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziție) (?)
+- [X] folosirea proprietăților classList, target sau currentTarget (sure)
+- [X] folosirea metodelor getComputedStyle și stopPropagation(done) (?)
+- [X] validarea datelor dintr-un formular folosind expresii regulate (sure)
 
 Pe lângă implementarea acestor cerințe minimale (a căror rezolvare corectă nu garantează punctajul maxim), includeți în proiect și tratarea altor probleme (la alegere) precum cea a accesibilității, internaționalizării (traducere, caractere speciale etc.), folosirii canvas/svg etc.  
 
