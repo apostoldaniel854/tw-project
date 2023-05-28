@@ -452,3 +452,147 @@ textarea {
 #clear-comment:hover {
   opacity: 0.8;
 }
+
+
+.comment-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+}
+
+.comment-container h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.comment-container form {
+  margin-top: 10px;
+}
+
+.comment-container input[type="text"],
+.comment-container textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.comment-container input[type="button"],
+.comment-container button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.comment-container input[type="button"]:hover,
+.comment-container button:hover {
+  background-color: #45a049;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment-list li {
+  margin-bottom: 10px;
+}
+
+.comment-list h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.comment-list p {
+  margin: 5px 0;
+}
+
+#comment-section {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comment-section li {
+  margin-bottom: 20px;
+  border: 1px solid black; /* Black border for comment boxes */
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+#comment-section h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e90ff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#comment-section p {
+  margin: 0;
+  color: #555;
+  line-height: 1.4;
+}
+
+#comment-section p.comment-date {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Add spacing between username, comment, and date */
+#comment-section h3,
+#comment-section p,
+#comment-section p.comment-date {
+  margin-bottom: 10px;
+}
+
+/* like button */
+.like-btn {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  background-color: #1c7ed6;
+}
+
+.like-count {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+#comment-section {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comment-section li {
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  max-height: 200px; /* Set a maximum height for the comment box */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+#comment-section h3,
+#comment-section p,
+#comment-section p.comment-date {
+  margin-bottom: 10px;
+}
+
+#comment-section .like-btn {
+  margin-top: 10px; /* Add some spacing below the comment content */
+}

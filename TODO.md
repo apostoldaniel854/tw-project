@@ -48,19 +48,19 @@ CSS:
 
 ### Cerințe generale minimale pentru partea 2 (JavaScript + misc):
 - [X] fișier separat pentru codul JavaScript
-- [X] modificarea stilului unui element sau al unui grup de elemente (TODO)
+- [X] modificarea stilului unui element sau al unui grup de elemente 
 - [X] manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS)
-- [ ] crearea și stergerea de elemente HTML 
+- [X] crearea și stergerea de elemente HTML 
 - [X] folosirea și modificarea evenimentelor generate de mouse si tastatură
-- [ ] modificare de proprietăți (TODO)
+- [X] modificare de proprietăți
 - [X] inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
 - [ ] folosirea setTimeout sau setInterval
-- [ ] folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
-- [ ] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
+- [X] folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
+- [X] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
 - [ ] schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziție)
 - [ ] folosirea proprietăților classList, target sau currentTarget
 - [ ] folosirea metodelor getComputedStyle și stopPropagation
-- [ ] validarea datelor dintr-un formular folosind expresii regulate
+- [ ] validarea datelor dintr-un formular folosind expresii regulate (TODO)
 
 Pe lângă implementarea acestor cerințe minimale (a căror rezolvare corectă nu garantează punctajul maxim), includeți în proiect și tratarea altor probleme (la alegere) precum cea a accesibilității, internaționalizării (traducere, caractere speciale etc.), folosirii canvas/svg etc.  
 
