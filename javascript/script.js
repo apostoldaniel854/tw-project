@@ -1,13 +1,16 @@
-
-
 window.onload = function() {
-    /// clear local storage
+    /// clear local storage for testing purposes
     // localStorage.clear();
+
+    // we suffix the url to make sure that the comments are unique for each page (when they are stored in local storage)
+    const COMMENTS = "comments" + window.location.href;
+    const COUNT_COMMENTS = "countComments" + window.location.href;
+
 
     retrieveComments();
     /// add countComments to local storage
     let countComments = 0;
-    localStorage.setItem("countComments", JSON.stringify(countComments));
+    localStorage.setItem(COUNT_COMMENTS, JSON.stringify(countComments));
 
     let field = document.querySelector('textarea');
     let backUp = field.getAttribute('placeholder');
@@ -32,18 +35,23 @@ window.onload = function() {
         this.setAttribute('placeholder', backUp);
         this.style.borderColor = 'blue'; /// subject to change
     }
-    function validateComment() {
+    function validateComment() { /// validate comment before adding it to page
         let name = document.getElementById("username").value;
         let comment = document.getElementById("comment").value;
         if (!name || !comment) {
             alert("please fill all available boxes");
             return;
         }
+        /// validate name using regex
+        if (!name.match(/^[a-zA-Z0-9_.-]*$/)) {
+            alert("please enter a valid username (only letters and numbers)");
+            return;
+        }
         alert("Thank you for your comment");
-        addComment(name, comment);
+        setTimeout(500 ,addComment(name, comment));
     }
-    function retrieveComments() {
-        let comments = JSON.parse(localStorage.getItem("comments"));
+    function retrieveComments() { /// add past comments to page
+        let comments = JSON.parse(localStorage.getItem(COMMENTS));
         if (comments) {
             let commentList = document.getElementById("comment-section");
             comments.forEach(comment => {
@@ -51,7 +59,7 @@ window.onload = function() {
                 newComment.innerHTML = `
                 <h3>${comment.name}</h3>
                 <p>${comment.comment}</p>
-                <p>${comment.date}</p>
+                <p id="comment-date">${comment.date}</p>
                 <button class="like-btn">
                     Like
                     <span class="like-count">${comment.likes}</span>
@@ -68,48 +76,52 @@ window.onload = function() {
     function addComment(name, comment) {
         let commentList = document.getElementById("comment-section");
         let newComment = document.createElement("li");
-        let date = new Date();
+        let currentDate = new Date();
+        /// date = month + day of the month + hour and minute
+        let date = currentDate.getDate() + "/" + (currentDate.getMonth() + 1) + "/" + currentDate.getFullYear() + " " + currentDate.getHours() + ":" + currentDate.getMinutes();
         /// get commentCount from local storage
-        let countComments = JSON.parse(localStorage.getItem("countComments"));        
+        let countComments = JSON.parse(localStorage.getItem(COUNT_COMMENTS));
         newComment.innerHTML = `
             <h3>${name}</h3>
             <p>${comment}</p>
-            <p>${date}</p>
+            <p id="comment-date">${date}</p>
             <button class="like-btn">
             Like
             <span class="like-count">0</span>
             </button>
         `;
-        newComment.id = countComments;
+        commentList.style.fontFamily = window.getComputedStyle(document.querySelector('.container')).getPropertyValue('fontFamily');
         /// add event listener for like button
         newComment.querySelector(".like-btn").addEventListener("click", likeComment);
         commentList.appendChild(newComment);
         
-        let comments = JSON.parse(localStorage.getItem("comments"));
+        let comments = JSON.parse(localStorage.getItem(COMMENTS));
         if (!comments) {
             comments = [];
         }
         comments.push({id: countComments, name: name, comment: comment, date: date, likes: 0 });
-        localStorage.setItem("comments", JSON.stringify(comments));
+        localStorage.setItem(COMMENTS, JSON.stringify(comments));
         countComments++;
-        localStorage.setItem("countComments", JSON.stringify(countComments));
+        localStorage.setItem(COUNT_COMMENTS, JSON.stringify(countComments));
     }
     
     function likeComment(event) {
+        /// stopPropagation to prevent event bubbling
+        event.stopPropagation();
         let likeCount = event.target.querySelector(".like-count");
         if (!likeCount) {
             likeCount = 0;
         }
         let likeNum = parseInt(likeCount.innerText);
         likeCount.innerText = likeNum + 1;
-        let comments = JSON.parse(localStorage.getItem("comments"));
+        let comments = JSON.parse(localStorage.getItem(COMMENTS));
         for (let i = 0; i < comments.length; i++) {
             if (comments[i].id == event.target.parentNode.id) {
                 comments[i].likes++;
                 break;
             }
         }
-        localStorage.setItem("comments", JSON.stringify(comments));
+        localStorage.setItem(COMMENTS, JSON.stringify(comments));
     }
     
 

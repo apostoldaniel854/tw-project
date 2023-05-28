@@ -54,13 +54,13 @@ CSS:
 - [X] folosirea și modificarea evenimentelor generate de mouse si tastatură
 - [X] modificare de proprietăți
 - [X] inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
-- [ ] folosirea setTimeout sau setInterval
+- [X] folosirea setTimeout sau setInterval
 - [X] folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
 - [X] folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
 - [ ] schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziție)
 - [X] folosirea proprietăților classList, target sau currentTarget
-- [ ] folosirea metodelor getComputedStyle și stopPropagation
-- [ ] validarea datelor dintr-un formular folosind expresii regulate (TODO)
+- [X] folosirea metodelor getComputedStyle și stopPropagation(done)
+- [X] validarea datelor dintr-un formular folosind expresii regulate
 
 Pe lângă implementarea acestor cerințe minimale (a căror rezolvare corectă nu garantează punctajul maxim), includeți în proiect și tratarea altor probleme (la alegere) precum cea a accesibilității, internaționalizării (traducere, caractere speciale etc.), folosirii canvas/svg etc.  
 
