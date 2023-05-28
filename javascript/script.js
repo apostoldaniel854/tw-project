@@ -134,7 +134,7 @@ window.onload = function() {
     /// every 10 seconds a different image will be displayed
     setInterval(changeImage, 10000);
     function changeImage() {
-        let images = ["images/1.png", "images/2.png", "images/3.png", "https://avatars.githubusercontent.com/u/47429017?s=400&u=97e70ab3b685add9cf2ef360c2b623945db24fd7&v=4"];
+        let images = ["images/1.png", "images/2.PNG", "images/3.PNG", "https://avatars.githubusercontent.com/u/47429017?s=400&u=97e70ab3b685add9cf2ef360c2b623945db24fd7&v=4"];
         let randomNum = Math.floor(Math.random() * images.length);
         let logoImage = document.getElementById("logo-image");
         logoImage.src = images[randomNum];
