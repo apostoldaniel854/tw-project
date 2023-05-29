@@ -603,7 +603,6 @@ textarea {
   font-weight: bold;
 }
 
-// have logo image centered 
 #logo {
   text-align: center;
   margin: 0 auto;
@@ -611,7 +610,6 @@ textarea {
   width: 50%;
   padding: 10px;
 }
-#logo img {
-  margin: 10px auto;
-  text-alling: center;
-}
+
+
+
