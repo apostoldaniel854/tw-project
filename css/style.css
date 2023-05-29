@@ -603,13 +603,9 @@ textarea {
   font-weight: bold;
 }
 
-#logo {
+#logo img {
+  margin: 10px auto;
   text-align: center;
-  margin: 0 auto;
-  display: block;
-  width: 50%;
-  padding: 10px;
 }
-
 
 
